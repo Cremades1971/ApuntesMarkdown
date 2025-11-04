@@ -1,0 +1,6 @@
+site_name: Mis Apuntes
+
+nav:
+     - Home: "index.md"
+     - Apuntes: "Microprocesadores_Marp.md"
+   

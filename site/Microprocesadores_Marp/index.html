@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Apuntes - Mis Apuntes</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Mis Apuntes</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Apuntes</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ut011-hardware-microprocesadores" class="nav-link">UT011 – Hardware. Microprocesadores</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h2 id="ut011-hardware-microprocesadores">UT011 – Hardware. Microprocesadores</h2>
+<h3 id="1-funcion-evolucion-caracteristicas-generales">1. FUNCIÓN. EVOLUCIÓN. CARACTERÍSTICAS GENERALES</h3>
+<p>El microprocesador es el chip más importante de cualquier placa base. Sin él, la computadora no podría funcionar. Este componente electrónico contiene millones de transistores cuya combinación permite realizar el trabajo encomendado al chip. Generalmente son rectangulares y tienen patillas (pins) para colocarlos en la placa base.</p>
+<p>También se le conoce como CPU (Central Processor Unit) o Unidad Central de Procesamiento. Se describen en términos de:
+- Tamaño de palabra
+- Velocidad
+- Memoria caché interna
+- Capacidad de RAM asociada
+- Procesador gráfico integrado (en muchos casos)</p>
+<hr />
+<h4 id="11-caracteristicas">1.1. Características</h4>
+<p><strong>a) Palabra:</strong>
+El tamaño de la palabra es el número de bits que se maneja como unidad. Actualmente, todos los procesadores tienen un ancho de palabra de 64 bits, aunque hasta hace poco era de 32 bits.</p>
+<p><strong>b) Velocidad del procesador:</strong>
+- <strong>MHz o GHz:</strong> Para microcomputadoras. Se mide por la frecuencia de oscilación del reloj.
+- <strong>MIPS:</strong> Millones de instrucciones por segundo. Para estaciones de trabajo, minis y macrocomputadoras.
+- <strong>FLOPS:</strong> Operaciones de punto flotante por segundo. Para supercomputadoras.</p>
+<p><strong>c) Memoria caché:</strong>
+Memoria intermedia entre el microprocesador y la RAM. Existen tres niveles:
+- <strong>L1:</strong> Interna al microprocesador. Ej: 4x32KB de datos e instrucciones.
+- <strong>L2:</strong> En el encapsulado de cada núcleo. Ej: 4x256KB.
+- <strong>L3:</strong> Compartida entre núcleos. Mayor capacidad, menor velocidad.</p>
+<hr />
+<p><strong>d) FSB (Frontal Side Bus):</strong>
+Canal de comunicación entre el microprocesador y el resto del sistema. Su velocidad depende de una señal de reloj. Actualmente, con memorias DDR4, alcanza los 4200 MHz.</p>
+<p><strong>e) Juego de instrucciones:</strong>
+Conjuntos como MMX, SSE, 3DNow mejoran el rendimiento en aplicaciones multimedia, gráficos 3D, audio y vídeo.</p>
+<p><strong>f) Tecnología de fabricación:</strong>
+Indica la distancia entre transistores. A menor tamaño, mayor integración. Ej: Intel (14nm, 10nm), AMD (7nm). Permite más transistores y menor consumo.</p>
+<p><strong>g) Hyper Threading:</strong>
+Tecnología de Intel que permite que un procesador físico se comporte como dos lógicos, mejorando la ejecución concurrente.</p>
+<hr />
+<p><strong>h) Overclocking:</strong>
+Consiste en aumentar la velocidad de funcionamiento del procesador más allá de su diseño original. Riesgos:
+- Aumento del calor
+- Electromigración
+- Alteración de la configuración global
+- Pérdida de garantía</p>
+<p><strong>i) Multiproceso:</strong>
+Uso de más de un microprocesador en un sistema. Requiere:
+- Placa base con soporte multiproceso
+- Microprocesadores compatibles</p>
+<p><strong>Nota:</strong> No confundir con multitarea.</p>
+<hr />
+<h3 id="2-arquitectura-micros-comerciales">2. ARQUITECTURA. MICROS COMERCIALES</h3>
+<h4 id="21-arquitectura">2.1. Arquitectura</h4>
+<p>Un procesador se compone de:
+- Memoria
+- ALU (Unidad Aritmético-Lógica)
+- CU (Unidad de Control)
+- Bus interno
+- Conexiones externas</p>
+<p>Basado en la arquitectura de Von Neumann. Evolución:
+- Intel 8086 (1979): 29.000 transistores, 14 MHz
+- Pentium III (1999): 8.200.000 transistores, 2 GHz
+- Procesadores actuales: más de 4 billones de transistores</p>
+<hr />
+<p><img alt="Intel 4004" src="../Images/intel4004.jpeg" title="intel 4004" /></p>
+<p><strong>Tipos de arquitectura:</strong>
+- <strong>CISC:</strong> Instrucciones complejas, ejecución lenta, menos instrucciones necesarias.
+- <strong>RISC:</strong> Instrucciones simples, ejecución rápida, circuitería más simple.</p>
+<hr />
+<p><strong>Zócalos:</strong>
+- Evolución desde presión manual hasta ZIF (Zero Insertion Force)
+- Ejemplos:</p>
+<ul>
+<li>Core i6-9ª gen: 1151</li>
+<li>Core i10-11ª gen: 1200</li>
+<li>Core i12-13ª gen: 1700</li>
+<li>Core i14-15ª gen: 1851
+<img alt="zocalos" src="../Images/socket.jpeg" title="sockets" /></li>
+</ul>
+<hr />
+<h4 id="22-micros-comerciales-actuales">2.2. Micros comerciales actuales</h4>
+<h5 id="a-intel">a) Intel</h5>
+<p><img alt="micro Intel" src="../Images/intel_i7.jpeg" title="Intel i7" /></p>
+<p><a href="https://www.intel.la">Fabricante Intel</a></p>
+<hr />
+<p>Desde 2008 con el lanzamiento del Core i7 (Nehalem). Generaciones:</p>
+<table>
+<thead>
+<tr>
+<th>Generación</th>
+<th>Año</th>
+<th>Nombre en clave</th>
+<th>Tecnología</th>
+<th>Socket</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1ª</td>
+<td>2010</td>
+<td>Nehalem</td>
+<td>32 nm</td>
+<td>1156</td>
+</tr>
+<tr>
+<td>2ª</td>
+<td>2011</td>
+<td>Sandy Bridge</td>
+<td>32 nm</td>
+<td>1156</td>
+</tr>
+<tr>
+<td>3ª</td>
+<td>2012</td>
+<td>Ivy Bridge</td>
+<td>22 nm</td>
+<td>1155</td>
+</tr>
+<tr>
+<td>.....</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13ª</td>
+<td>2022</td>
+<td>Raptor Lake</td>
+<td>10 nm</td>
+<td>1700</td>
+</tr>
+<tr>
+<td>14ª</td>
+<td>2023</td>
+<td>Meteor Lake</td>
+<td>7 nm</td>
+<td>1851</td>
+</tr>
+<tr>
+<td>15ª</td>
+<td>2024</td>
+<td>Arrow Lake</td>
+<td>3 nm</td>
+<td>1851</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Tipos de procesadores por generación:</strong>
+- Celeron, Pentium, Core i3, i5, i7, i9, Xeon
+- Diferencias en núcleos/hilos, rendimiento y presencia de gráfica integrada</p>
+<p><strong>Identificación de generación:</strong>
+- Primer dígito del número del modelo indica la generación
+- Sufijos:
+  - K: Overclocking
+  - T: Alto consumo
+  - F: Sin gráfica
+  - H/HK/HQ: Portátiles
+  - U/Y: Bajo consumo
+  - XE: Extreme Edition</p>
+<hr />
+<h5 id="b-amd">b) AMD</h5>
+<p><img alt="micro AMD" src="../Images/amd.jpeg" title="micro AMD" /></p>
+<p><a href="https://www.amd.com">Fabricante AMD</a></p>
+<hr />
+<p>Desde 2017 con Ryzen 7 (Summit Ridge).</p>
+<p>Generaciones:</p>
+<table>
+<thead>
+<tr>
+<th>Generación</th>
+<th>Año</th>
+<th>Nombre en clave</th>
+<th>Tecnología</th>
+<th>Socket</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1ª</td>
+<td>2017</td>
+<td>Summit Ridge</td>
+<td>14 nm</td>
+<td>AM4</td>
+</tr>
+<tr>
+<td>2ª</td>
+<td>2018</td>
+<td>Pinnacle Ridge</td>
+<td>12 nm</td>
+<td>AM4</td>
+</tr>
+<tr>
+<td>.....</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>7ª</td>
+<td>2022</td>
+<td>Raphael</td>
+<td>5 nm</td>
+<td>AM5</td>
+</tr>
+<tr>
+<td>8ª</td>
+<td>2024</td>
+<td>Phoenix</td>
+<td>4 nm</td>
+<td>AM5</td>
+</tr>
+<tr>
+<td>9ª</td>
+<td>2025</td>
+<td>Raphael</td>
+<td>5 nm</td>
+<td>AM5</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>APUs y portátiles:</strong>
+- Raven Ridge, Picasso, Renoir, Vermeer, Raphael, Phoenix</p>
+<p><strong>Tipos de procesadores:</strong>
+- Athlon, Ryzen 3/5/7/9, Threadripper, EPYC
+- Diferencias en núcleos/hilos y rendimiento</p>
+<hr />
+<p><strong>Identificación de generación Ryzen:</strong>
+- Primer número: segmento (Ryzen 3, 5, 7, 9)
+- Segundo número: generación (1000 = 1ª gen, 2000 = 2ª gen, etc.)
+- Tercer número: rendimiento (9 = alto, 2-3 = medio)
+- Letras:
+  - X: Alto rendimiento (XFR)
+  - U: Bajo consumo
+  - H: Alto rendimiento portátil
+  - G: APU (gráfica integrada)</p>
+<hr /></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
